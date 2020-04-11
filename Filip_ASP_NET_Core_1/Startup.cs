@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Filip_ASP_NET_Core_1.Data;
 
 namespace Filip_ASP_NET_Core_1
 {
@@ -24,6 +26,11 @@ namespace Filip_ASP_NET_Core_1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<Filip_ASP_NET_Core_1Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Filip_ASP_NET_Core_1Context")));
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

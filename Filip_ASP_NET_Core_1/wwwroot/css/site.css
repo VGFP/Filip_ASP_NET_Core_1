@@ -2,26 +2,64 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    
 }
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #17a2b8;
+    /*color: #0366d6;*/
+}
+
+dt {
+    color: #fff;
+}
+
+dd {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+h4 {
+    color: #fff;
+}
+
+th {
+    color: #fff;
+}
+
+td {
+    color: #fff;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
@@ -59,8 +97,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(126,0,255,1) 100%);
 }
 .footer {
   position: absolute;

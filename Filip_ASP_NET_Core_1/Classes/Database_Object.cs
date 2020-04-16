@@ -13,6 +13,7 @@ namespace Filip_ASP_NET_Core_1.Classes
 
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
+        [Display(Name = "Short Description")]
         public string Description { get; set; }
     }
 }
